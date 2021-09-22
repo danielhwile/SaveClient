@@ -1,0 +1,54 @@
+.voteRadio {
+  display: none !important;
+}
+   
+.colorUpVote {
+  color: rgb(29, 150, 25);
+}
+.colorDownVote {
+  color: rgb(190, 65, 27);
+}
+.postDiv {
+  border: 2px rgb(170, 170, 170) solid;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: .5em;
+  display: grid;
+  grid-template-columns: 8% auto;
+  margin: .6em;
+  width: 90vw;
+  max-width: 600px;
+  min-width: 400px;
+}
+.postFooter{
+  display: flex;
+}
+.postComment{
+  background-color:rgb(226, 226, 226);
+  border-radius: 3px;
+  padding: .1em .3em;
+  cursor: pointer;
+}
+.postComment:hover{
+  background-color:rgb(208, 215, 231);
+}
+.postTitle{
+  padding: .3em 0;
+}
+.postHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.votesDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 .3em 0 0;
+}
+.labelVote{
+  cursor: pointer;
+}
+.pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.createDiv {
+    border: 2px rgb(170, 170, 170) solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .6em;
+    width: 90vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+.postInput{
+    margin: .6em;
+    width: 90%;
+    font-size: 1em;
+}
+.descriptionInput {
+    resize: none;
+    font-size: 1.2em;
+}
+#formTitle {
+    align-self: flex-start;
+    margin: auto 5%;
+}
+.submit {
+    cursor: pointer;
+    align-self: flex-end;
+    margin: auto 5%;
+    border-radius: 5px;
+    background-color:rgb(226, 226, 226);
+    border: 1px solid rgb(184, 184, 184);
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.submit:hover {
+    background-color: rgb(208, 215, 231);
+}
+@media screen {
+    .screenHiddenLabel {
+    display: none; /* Keeping labels available for screen Readers */
+    }
+}

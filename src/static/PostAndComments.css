@@ -1,0 +1,32 @@
+.commentPageContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.newCommentForm {
+    border: 2px rgb(170, 170, 170) solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: .6em;
+    width: 90vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+.commentInput{
+    margin: .6em;
+    width: 90%;
+    font-size: 1em;
+    resize: none;
+}
+.commentsContainer{
+    width: 90vw;
+    max-width: 600px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

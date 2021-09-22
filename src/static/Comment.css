@@ -1,0 +1,19 @@
+.commentDiv{
+    border: 2px rgb(170, 170, 170) solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: .5em;
+    margin: .6em;
+    width: 60vw;
+    max-width: 400px;
+    min-width: 300px;
+    align-self: flex-start;
+}
+.opComment{
+    background-color: rgb(255, 230, 209);
+    align-self: flex-end;
+}
+.commentHeader{
+    display: flex;
+    justify-content: space-between;
+}

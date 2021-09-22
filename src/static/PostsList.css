@@ -1,0 +1,63 @@
+.userContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "body user";
+}
+
+.postList {
+  grid-area: body;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.postListHeader {
+    border: 2px rgb(170, 170, 170) solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 8% auto 8%;
+    justify-items: center;
+    align-items: center;
+    margin: .6em;
+    width: 90vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+.createPostInput{
+    width: 100%;
+    height: 2em;
+}
+.createIcon{
+    font-size: 1.3em;
+}
+.userProfileHeader{
+    display: none;
+}
+.userTile{
+    grid-area: user;
+    border: 2px rgb(170, 170, 170) solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 1em;
+    margin: .6em;
+    width: 70%;
+    min-width: 320px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 980px) {
+  .userTile{
+    display: none;
+  }
+  .userContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "body";
+  }
+  .userProfileHeader{
+    display: grid;
+}
+}

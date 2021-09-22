@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post should match snapShot 1`] = `
+<div
+  className="postDiv"
+>
+  <div
+    className="votesDiv"
+  >
+    <label
+      class="labelVote"
+    >
+      <input
+        checked={false}
+        className="voteRadio voteRadioUp"
+        name="vote"
+        onChange={[Function]}
+        type="radio"
+        value={0}
+      />
+      <h2
+        className={false}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+          />
+        </svg>
+      </h2>
+    </label>
+    <h3>
+      105
+    </h3>
+    <label
+      class="labelVote"
+    >
+      <input
+        checked={false}
+        className="voteRadio"
+        name="vote"
+        onChange={[Function]}
+        type="radio"
+        value={0}
+      />
+      <h2
+        className={false}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+          />
+        </svg>
+      </h2>
+    </label>
+  </div>
+  <div
+    className="postContent"
+  >
+    <div
+      className="postHeaderandTitle"
+    >
+      <div
+        className="postHeader"
+      >
+        <p>
+          Created by 
+          <a
+            className="pointer"
+            onClick={[Function]}
+          >
+            JestTest
+          </a>
+        </p>
+        <p
+          title="Tuesday, September 21, 2021 at 10:59:59 AM EDT"
+        >
+          &lt;1 Hour Ago
+        </p>
+      </div>
+      <h2
+        className="postTitle"
+      >
+        test Title
+      </h2>
+      <p
+        className="postDescription"
+      >
+        test Description 401042140
+      </p>
+    </div>
+    <div
+      className="postFooter"
+    />
+  </div>
+</div>
+`;
