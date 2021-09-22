@@ -44,14 +44,14 @@ const Post = ({postDetails, isCommentSection}) => {
     const userProfileClick = (e) => {
         // link to user profile at the username in the post header
         e.preventDefault();
-        let hrefString ='/user/'+postDetails.creator;
+        let hrefString ='/SaveClient/user/'+postDetails.creator;
         window.location.href=hrefString;
     }
 
     const postCommentClick = (e) => {
         // link to the post's comment section.
         e.preventDefault();
-        let hrefString ='/post/'+postDetails._id;
+        let hrefString ='/SaveClient/post/'+postDetails._id;
         window.location.href=hrefString;
     }
     return (

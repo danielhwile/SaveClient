@@ -29,7 +29,7 @@ const CreatePost = () => {
 
     const [postPost] = useMutation(POST_POST, {onCompleted: data => {
         // Graph QL Function for sending new posts in
-        let hrefString = '/post/' + data.postPost._id // link string to new posts url 
+        let hrefString = '/SaveClient/post/' + data.postPost._id // link string to new posts url 
         window.location.href=hrefString;
     }});
 

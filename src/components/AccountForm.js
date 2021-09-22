@@ -25,7 +25,7 @@ const AccountForm = ({ submit, title, isRegister, registerStatus }) => {
     const [postUser] = useMutation(ACCOUNT_POST, {onCompleted: data => {
         // graphQL fx for log in and registration using the query above
         localStorage.setItem('authToken',data.postUser.jwt)
-        window.location.href='/';
+        window.location.href='/SaveClient/';
     }});
 
 

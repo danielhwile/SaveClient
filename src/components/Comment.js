@@ -8,7 +8,7 @@ const Comment = ({commentDetails}) => {
     const userProfileClick = (e) => {
         // links to the user profile when clicking on posting user's name
         e.preventDefault();
-        let hrefString ='/user/'+commentDetails.creator;
+        let hrefString ='/SaveClient/user/'+commentDetails.creator;
         window.location.href=hrefString;
     }
 

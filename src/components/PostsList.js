@@ -47,7 +47,7 @@ const PostsList = (props) => {
     // functions for the page.
     const createPostClick = (e) => {
         e.preventDefault();
-        window.location.href='/create'
+        window.location.href='/SaveClient/create'
     }
     // finding UserPhoto
     let userPhotoIndex = 0;

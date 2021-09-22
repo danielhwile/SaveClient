@@ -12,19 +12,19 @@ const Header = () => {
     const logOut = (e) => {
         // log out function clears our token from local storage and sends us back to the top of the site, which without a token routes us to the landing
         localStorage.removeItem('authToken');
-        window.location.href='/'
+        window.location.href='/SaveClient/'
     }
 
     const userProfileClick = (e) => {
         // link to our personal profile on header click
         e.preventDefault();
-        let hrefString ='/user/'+User.username;
+        let hrefString ='/SaveClient/user/'+User.username;
         window.location.href=hrefString;
     }
     const homePageClick = (e) => {
         // link to our homepage when clicking on the logo
         e.preventDefault();
-        window.location.href="/";
+        window.location.href="/SaveClient/";
     }
     return (
         <header>
