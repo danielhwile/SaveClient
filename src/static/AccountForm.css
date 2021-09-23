@@ -63,3 +63,9 @@
 .accFormBtn:hover {
     transform: scale(1.05);
 }
+@media screen and (max-width: 600px) {
+    .landingPageForm {
+        margin: 2em .5em;
+    
+    }
+}

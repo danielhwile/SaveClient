@@ -20,8 +20,13 @@
   max-width: 600px;
   min-width: 400px;
 }
+.postDescription{
+  word-wrap: break-word;
+}
 .postFooter{
+  margin: .5em 0 0 0;
   display: flex;
+  justify-content: space-between;
 }
 .postComment{
   background-color:rgb(226, 226, 226);
@@ -34,6 +39,7 @@
 }
 .postTitle{
   padding: .3em 0;
+  word-wrap: break-word;
 }
 .postHeader{
   display: flex;
@@ -51,4 +57,38 @@
 }
 .pointer{
   cursor: pointer;
+}
+.editDeleteHolder{
+  display: flex;
+  font-size: 1.4em;
+}
+.editBtn {
+  margin: 0 .3em;
+  cursor: pointer;
+  padding: 0 .1em;
+  background-color: rgb(212, 212, 212);
+  border-radius: 6px;
+}
+.editBtn:hover{
+  background-color: rgb(164, 175, 206);
+}
+.editIcon{
+  transform: translateY(8%);
+}
+.deleteBtn {
+  margin: 0 0 0 .3em;
+  cursor: pointer;
+  padding: 0 .1em;
+  background-color: rgb(212, 212, 212);
+  border-radius: 6px;
+}
+.deleteBtn:hover{
+  background-color: rgb(189, 153, 153);
+}
+.trashIcon{
+  transform: translateY(8%);
+}
+.editTitle{
+  font-size: 1.5em;
+  font-weight: 700;
 }

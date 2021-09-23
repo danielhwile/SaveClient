@@ -4,13 +4,12 @@ import ReactDOM from 'react-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import jwt from 'jsonwebtoken';
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 // local imports
 import Landing from './components/Landing';
 import App from './App';
 import './index.css';
 import { UserContext } from "./UserContext";
-
 
 
 const httpLink = createHttpLink({

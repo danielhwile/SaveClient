@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://danielhwile.github.io/SaveClient/",
+  "homepage": "https://danielhwile.github.io/SaveClient",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
     "graphql": "^15.5.3",
     "jsonwebtoken": "^8.5.1",
     "qs": "^6.10.1",

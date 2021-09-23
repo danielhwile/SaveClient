@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // local imports
 import Header from './components/Header';
 import PostsList from './components/PostsList';
@@ -11,18 +11,20 @@ function App() {
     <Router>
       <Header />
       <div>
-          <Route exact path="/">
+          <Switch>
+          <Route exact path={'/'}>
             <PostsList />
           </Route>
-          <Route exact path="/create">
+          <Route exact path={'/create'}>
             <CreatePost />
           </Route>
-          <Route path="/user/:id">
+          <Route path={'/user/:id'}>
             <PostsList />
           </Route>
-          <Route path="/post/:id">
+          <Route path={'/post/:id'}>
             <PostAndComments/>
           </Route>
+          </Switch>
       </div>
       </Router>
   );

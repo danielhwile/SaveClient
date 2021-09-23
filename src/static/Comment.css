@@ -8,6 +8,7 @@
     max-width: 400px;
     min-width: 300px;
     align-self: flex-start;
+    word-wrap: break-word;
 }
 .opComment{
     background-color: rgb(255, 230, 209);

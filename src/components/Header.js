@@ -12,19 +12,19 @@ const Header = () => {
     const logOut = (e) => {
         // log out function clears our token from local storage and sends us back to the top of the site, which without a token routes us to the landing
         localStorage.removeItem('authToken');
-        window.location.href='/SaveClient/'
+        window.location.href=process.env.PUBLIC_URL +'/'
     }
 
     const userProfileClick = (e) => {
         // link to our personal profile on header click
         e.preventDefault();
-        let hrefString ='/SaveClient/user/'+User.username;
+        let hrefString =process.env.PUBLIC_URL +'#/user/'+User.username;
         window.location.href=hrefString;
     }
     const homePageClick = (e) => {
         // link to our homepage when clicking on the logo
         e.preventDefault();
-        window.location.href="/SaveClient/";
+        window.location.href=process.env.PUBLIC_URL +'/';
     }
     return (
         <header>
@@ -32,7 +32,9 @@ const Header = () => {
               <div id="logoText"><p id="h1LogoText">SaveTree</p></div>
               <div className="Icon"><FaSave/></div>
               <div className="Icon Tree"><FaTree/></div>
+              <p>v: 1.0.2</p>
           </div>
+          
           {(User !==null) && <div className="holder userHolder">
               <div className="userProfileLink" onClick={userProfileClick}>
                 <h2><FaUserTie/></h2>

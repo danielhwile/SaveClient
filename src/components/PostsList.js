@@ -1,6 +1,6 @@
 import { FaPaperPlane,FaUserTie } from 'react-icons/fa'
 import { gql, useQuery } from '@apollo/client';
-import { BrowserRouter as Router, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, useParams} from 'react-router-dom';
 import { useContext } from 'react';
 // local imports
 import { UserContext } from "../UserContext";
@@ -47,7 +47,7 @@ const PostsList = (props) => {
     // functions for the page.
     const createPostClick = (e) => {
         e.preventDefault();
-        window.location.href='/SaveClient/create'
+        window.location.href=process.env.PUBLIC_URL + '#/create'
     }
     // finding UserPhoto
     let userPhotoIndex = 0;
@@ -67,7 +67,7 @@ const PostsList = (props) => {
                 </div>}
                 {(!id) && <div className="postListHeader">
                     <FaUserTie className="createIcon" />
-                    <input className="createPostInput" type="text" placeHolder={"Create New Issue Post"} onFocus={createPostClick}/>
+                    <input className="createPostInput" type="text" placeHolder={"Create New Post"} onFocus={createPostClick}/>
                     <FaPaperPlane className="createIcon"/>
                 </div>}
                 {data.getPosts.map(post =>(<Post postDetails={post}/>))}

@@ -14,10 +14,13 @@ header {
 }
 .titleHolder {
   width: auto;
-  grid-template-columns: auto 40px 40px;
+  grid-template-columns: auto 1.4em 1.2em 3em;
   cursor: pointer;
   font-size: 1.8em;
   font-weight:600;
+}
+.titleHolder > p {
+  font-size: .6em;
 }
 #h1LogoText{
   padding: 0 0 .1em 0;
@@ -32,15 +35,29 @@ header {
 }
 .userProfileLink {
   width: auto;
-  grid-template-columns: 30px auto;
+  grid-template-columns: 1.5em auto;
   display: grid;
   cursor: pointer;
+  margin: 0 1em;
 }
 .userHolder {
   justify-items: end;
-  grid-template-columns: auto 40px;
+  grid-template-columns: auto 1em;
 }
 .logOut {
   cursor: pointer;
   transform: translateY(4%);
+}
+@media screen and (max-width: 600px) {
+  .userProfileLink {
+    width: 45%;
+    font-size: .8em;
+  }
+  .titleHolder {
+    width: 45%;
+    font-size: 1.2em;
+  }
+  .userHolder {
+    justify-items: center;
+  }
 }
