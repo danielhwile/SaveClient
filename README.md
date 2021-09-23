@@ -1,6 +1,6 @@
 # SAVE TREE - MERN & GRAPHQL
 
-Save Client is my React fron end for SaveTree. This is a messageboard site that is available to visit and use at
+Save Client is my React front end for SaveTree. This is a messageboard site that is available to visit and use at
 
 https://danielhwile.github.io/SaveClient/#/
 
