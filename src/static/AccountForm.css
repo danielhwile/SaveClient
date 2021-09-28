@@ -1,16 +1,28 @@
 .landingPage {
-    display: grid;
-    grid-template-columns: 50% auto;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
     min-height: 10em;
+    width: 100%;
 }
 .landingPageForm {
     border: groove 2px rgb(199, 199, 199);
     border-radius: .5em;
     height: 100%;
     margin: 2em;
+    width: 40%;
     background-color: white;
-
+    max-width: 500px;
+}
+.saveDescription{
+    border: groove 2px rgb(199, 199, 199);
+    border-radius: .5em;
+    margin: 2em;
+    width: 40%;
+    background-color: white;
+    max-width: 500px;
+    padding: 1em;
 }
 .accountForm{
     display: flex;
@@ -63,6 +75,15 @@
 .accFormBtn:hover {
     transform: scale(1.05);
 }
+.registerLoginSwitch{
+    font-size: 1em;
+    padding: .2em .5em;
+    background-color: rgb(45, 129, 73);
+}
+.registerLoginSwitch:hover{
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 600px) {
     .landingPageForm {
         margin: 2em .5em;

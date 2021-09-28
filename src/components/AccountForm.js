@@ -11,12 +11,12 @@ const ACCOUNT_POST = gql`
 `;
 
 
-const AccountForm = ({ submit, title, isRegister, registerStatus }) => {
+const AccountForm = () => {
     // setting form inputs state
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
-
+    const [isRegister, setIsRegister] = useState(false);
     const handleChange = (e, funct) => {
         // handles changes in form inputs
         funct(e.target.value)
@@ -38,20 +38,24 @@ const AccountForm = ({ submit, title, isRegister, registerStatus }) => {
         }
         postUser({ variables: formBody})
     }
+    const registerSwap = (e) => {
+        e.preventDefault();
+        setIsRegister(!isRegister);
+    }
 
     return (
         <form className="accountForm" onSubmit={onSubmit}>
             <div className="accountForm">
-                <h2>{title}:</h2>
+                <h2>{isRegister?"Register":"Login"}:</h2>
 
                 <div className="formItem">
                     <label htmlFor="Username">Username:</label>
-                    <input className="formInput" type="username" id={title+"Username"} name="Username" placeholder="Enter Username" value={username} onChange={(e) =>handleChange(e, setUsername)} required/>
+                    <input className="formInput" type="username" name="Username" placeholder="Enter Username" value={username} onChange={(e) =>handleChange(e, setUsername)} required/>
                 </div>
 
                 <div className="formItem">
                     <label htmlFor="Password">Password:</label>
-                    <input className="formInput" type="password" id={title+"Password"} name="Password" placeholder="Enter Password" value={password} onChange={(e) =>handleChange(e, setPassword)} required/>
+                    <input className="formInput" type="password" name="Password" placeholder="Enter Password" value={password} onChange={(e) =>handleChange(e, setPassword)} required/>
                 </div>
 
                 {isRegister && <div className="formItem"> 
@@ -59,7 +63,8 @@ const AccountForm = ({ submit, title, isRegister, registerStatus }) => {
                     <input className="formInput" type="email" id="Email" name="Email" placeholder="Enter Email" value={email} onChange={(e) =>handleChange(e, setEmail)} required/>
                 </div>}
 
-                <input className="accFormBtn" type="submit" name={title} value={title}/>
+                <input className="accFormBtn" type="submit" name={isRegister?"Register":"Login"} value={isRegister?"Register":"Login"}/>
+                <button className="registerLoginSwitch accFormBtn" onClick={registerSwap}>{isRegister?"Go to Login":"Go to Register"}</button>
             </div>
         </form>
     )
