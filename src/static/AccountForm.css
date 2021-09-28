@@ -71,6 +71,7 @@
     font-weight: bolder;
     border-radius: 1em;
     transition: .05s linear all;
+    margin: .5em 0;
 }
 .accFormBtn:hover {
     transform: scale(1.05);
@@ -79,6 +80,7 @@
     font-size: 1em;
     padding: .2em .5em;
     background-color: rgb(45, 129, 73);
+    margin: .5em 0;
 }
 .registerLoginSwitch:hover{
     transform: scale(1.1);
@@ -87,6 +89,9 @@
 @media screen and (max-width: 600px) {
     .landingPageForm {
         margin: 2em .5em;
-    
+        width: 90vw;
+    }
+    .saveDescription{
+        width: 90vw;
     }
 }

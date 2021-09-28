@@ -32,7 +32,7 @@ const Header = () => {
               <div id="logoText"><p id="h1LogoText">SaveTree</p></div>
               <div className="Icon"><FaSave/></div>
               <div className="Icon Tree"><FaTree/></div>
-              <p>v: 1.0.2</p>
+              <p>v: 1.0.3</p>
           </div>
           
           {(User !==null) && <div className="holder userHolder">
